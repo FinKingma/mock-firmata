@@ -30,7 +30,7 @@ function MockFirmata(opts) {
 
 util.inherits(MockFirmata, Board);
 
-
+MockFirmata.prototype.write = function() {};
 MockFirmata.prototype.servoConfig = function() {};
 MockFirmata.prototype.pingRead = MockFirmata.prototype.pulseIn;
 
